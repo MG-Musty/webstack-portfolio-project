@@ -1,0 +1,480 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block title %}Moduleone | MG Fashionisto Academic{% endblock %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A learning platform that teaches you all you need to know about fashion and design, with specialization in both male and female.">
+
+    <!--Favicon for this project-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+  <link rel="icon" type="img/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+  <link rel="icon" type="img/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+
+{% load django_bootstrap5 %}
+
+{% bootstrap_css %}
+
+{% bootstrap_javascript %}
+
+{% bootstrap_messages %}
+
+  <title>MG FASHIONISTO ACADEMIC</title>
+ 
+  <!-- Custom fonts for this template-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+  <!-- Custom styles for this template-->
+  <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+
+  <!-- Date Time Picker CSS -->
+  <link rel="stylesheet" href="{% static 'date-time-phone/jquery-ui.css' %}">
+  <link rel='stylesheet' href="{% static 'date-time-phone/jquery-ui-timepicker-addon.css' %}" />
+  <!-- Date Time Picker CSS -->
+
+</head>
+
+<body id="page-top" style="background-color: rgb(0, 0, 0); padding-right: 50px; margin: 30px;">
+
+    <div class="container">
+      <h1 style="background-color: rgb(69, 87, 200); text-align: center;">Introduction to Fashion Design - Learning Outcomes</h1>
+     
+     <h2 style="background-color: rgb(209, 67, 67);">Course objective</h2>
+
+      <p>This course provides an introduction to the fashion world and exposes participants to the various areas of fashion and the opportunities therein.<br>
+         The course also places emphasis on inspiring and empowering participants to start off their own fashion businesses by exposing them to entrepreneurship and business skills training.<br>  
+         At the end of the training, participants will be able to make basic designs and sew male and female clothing.<br>  
+         They will also have been prepared to grow their interests in Fashion Designing, Fashion Illustration or clothing construction techniques using Pattern drafting.
+      </p>
+
+      <p>
+        The course is presented in theoretical and practical aspects over a period of three months where participants are exposed to introductory courses in Fashion Designing, Pattern drafting, Practical Sewing, Fashion illustration and Entrepreneurship.<br>
+        All participants are required to undertake a project to further deepen their understanding of the basic concepts and also enable them research their areas of interest.
+      </p>
+
+      <p>
+        This course introduces hands-on tailoring and sewing skills.<br>
+        Techniques are taught on how to use manual and automatic sewing machines and general clothing construction skills.<br>
+        The course places emphasis on the practical hands-on skills required to start you off to making clothes.<br>
+        At the end of the training, participants will be able to make simple designs and sew male or female clothing.<br>
+        They will also be prepared to grow their interests in Fashion Designing, Fashion Illustration and clothing construction techniques using Pattern drafting.
+      </p>
+
+      <h2>Having completed this module, you will be able to:</h2>
+      <ul>
+        <li>Define what Fashion Design is and who invented it.</li>
+        <li>Understand the daily tasks and skills required to be successful as a Fashion Designer.</li>
+        <li>Identify the Types of Fashion Design.</li>
+        <li>Describe the advantages and disadvantages of choosing Fashion Design as a career.</li>
+        <li>Recognize the five stages in the Fashion Cycle and how it affects the design process.</li>
+      </ul>
+
+      <h1 style="background-color: rgb(209, 67, 67);">Introduction</h1>
+
+      <p>
+        In this topic you will delve into what fashion designing is all about and the expectations and skills required to make it into one of the many career pathways in this sought after industry.<br>
+        You will discuss who invented fashion and where it all began.
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">What is Fashion Design?</h2>
+
+      <p>
+        The concept of design in any arena is the act of taking an idea, concept, or drawing and using it to produce or build materials that have never before been created.<br> 
+      </p>
+
+      <P>
+        Fashion design utilises the same concepts and ideas to create clothing and accessories for everyday wear.<br>
+      </P>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Who Invented It?</h2>
+
+      <p>
+        Before fashion design was invented as a career, clothing was fashioned by a local seamstress or an anonymous dressmaker.<br>
+      </p>
+
+      <p>
+        During the 19th century, fashion standards were copied from royalty.<br>
+      </p>
+
+      <p>
+        Then, a local seamster, by the name of <stronge>Charles Frederick Worth</stronge>, came along and changed fashion standards altogether.<br>
+        <i>"This course will explore the history of fashion in a future module at length, but it is important to note that Charles Worth set up the first fashion house in Paris and became the first designer to dictate style and design to customers."</i>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">What Does a Fashion Designer Do?</h2>
+
+      <p>
+        If you are interested in a career in fashion design, you should possess a love for fashion and have a certain amount of creative ability.<br>
+      </p>
+
+      <p>
+        Fashion design is a broad career with many different sub-careers, so, a fully trained designer can choose to enter into a variety of specialities.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Regardless of the speciality, each fashion designer performs the following essential functions:</h2>
+
+      <ul>
+        <li>Researches fashion trends and makes predictions</li>
+        <li>Visits manufacturers or trade shows to acquire samples of fabrics</li>
+        <li>Creates storyboards using sketches and designs</li>
+        <li>Utilises computer-aided designs to bring visions to life</li>
+        <li>Makes technical patterns, sews, weaves, and knits</li>
+        <li>Selects colours</li>
+        <li>Works with models to help fit designs</li>
+        <li>Attends and arranges fashion shows</li>
+        <li>Oversees the production of sample garments</li>
+        <li>Modifies and approves completed garments.</li>
+      </ul>
+      <p>
+        Fashion designers can work in a wide variety of settings, including retail stores, large fashion forms, or in costume design.<br>
+      </p>
+      <p>
+        Some areas of fashion can require long and unpredictable hours, which can vary the scope of the designer’s workload.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Examples of different settings and workloads:</h2>
+
+      <p>
+        A fashion designer working at a big design firm might be required to supervise the entire design process from beginning to end.<br>
+      </p>
+      <p>
+        Alternatively, a designer working in a single costume department, may only be responsible for overseeing costume design for their department.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Types of Fashion Design and Careers</h2>
+
+      <p>
+        In this topic, you will look deeper into the different types of fashion design and the different sectors.<br>
+      </p>
+      <p>
+        You will gain an understanding of the importance of various skills which are required in this profession.<br>
+      </p>
+      <p>
+        You will learn the various terminology that is used within the industry so you can enter the world of fashion confidently.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Types of Fashion Design</h2>
+
+      <p>
+        Now that you have a general idea of the core daily tasks and functions of a fashion designer, it is important to look deeper into the different types of fashion design.<br> 
+        As we previously mentioned, there are also several sub-types of design that you could invest your time into.<br> 
+        For instance, you could design accessories, footwear, or children’s clothing, among many other options.<br>
+      </p>
+      <p>
+        Each speciality of design, whether it is accessories, clothing, scarves, or hats, fits into one of three main sectors.<br>
+      </p>
+      <p>
+        As a fashion designer, you should be familiar with these areas as you could be working for some or all of them throughout your career.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Mass Market</h2>
+
+      <p>
+        The first sector of design involves the most straightforward and accessible form of clothing, which is the <stronge>mass market</stronge>.
+      </p>
+      <p>
+        Clothing that is designed for this area is ready to wear and available in mass quantities at standard measurements.<br> 
+        Since this is the most affordable fashion production, the most inexpensive fabrics and materials are used to create designs.<br>
+      </p>
+      <p>
+        An example of a mass market store would be Harrods, Marks and Spencer, and Argos.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Ready-to-Wear</h2>
+
+      <p>
+        If you want to create clothes that are a little bit more high-end and exclusive, <stronge>ready-to-wear</stronge> garments are a great fashion type.<br>
+      </p>
+      <p>
+        These garments are also referred to as prêt-a-porter, and there are a couple of benefits to the designer.<br> 
+        They are sold in smaller amounts and bear the designer’s name on the label, but they are often more expensive.<br>
+      </p>
+      <p>
+        The term ready-to-wear is also often referred to as ’off the rack’, and many haute couture designers will sell select pieces in both sectors.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Haute Couture</h2>
+
+      <p>
+        You might remember earlier in the previous topic learning about Charles Frederick Worth, who was the first fashion designer.<br> 
+        Worth also established the first haute couture house in Paris in 1858, which is a fashion style used by designers like Versace, Yves Saint Laurent, and Christian Dior.<br>
+      </p>
+      <p>
+        As a designer, <stronge>haute couture</stronge> is considered the pinnacle of fashion and a style type that you will want to remember, but it isn’t one that you can learn in any book.<br>
+      </p>
+      <p>
+        Designers who specialise in this sector work on crafting original creations that cost thousands of pounds.<br>
+      </p>
+      <p>
+        Most of the time, the designer will work directly with clients and arrange custom fittings and alterations.<br> 
+        This form of design requires a great deal of skill and the garment takes twice the amount of time to make.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Is a Career in Fashion Design for You?</h2>
+
+      <p>
+        To work as a fashion designer, you should have a passion for clothing, accessories, or the fashion industry.<br>
+      </p>
+      <p>
+        Since fashion design is a form of art, it would also help if you are artistic or have a creative eye, although it is not necessarily a requirement.<br>
+      </p>
+      <p>
+        The fashion industry is very competitive and constantly growing, so while there are some skills you can learn, an aspiring designer should possess some or all the same skills as seasoned professionals.<br>
+      </p>
+
+      <h2>Communication Skills</h2>
+
+      <p>
+        As you go throughout your day, you communicate verbally and non-verbally more than you realise.<br> 
+        Some people are naturally excellent communicators, and some people need to work at it.<br> 
+        Since there can be several people working together to create a garment, a fashion designer should be skilled in communicating with clients, employees, models, and other designers.<br>
+      </p>
+      <p>
+        It is always important to remember that anytime you are providing work where you will be offering a service to a client, miscommunication can always be a factor.<br> 
+        Let’s say, for example, you measure a customer for a dress. A poor communicator would rely on industry jargon or designer terminology, and in return, the customer might feel confused and will not communicate a vital need or want.<br>
+      </p>
+      <p>
+        Try always to connect and bridge any gaps with your clients, employees, and co-workers.<br>
+      </p>
+
+      <h2>Knowledge of Current Fashion Trends</h2>
+
+      <p>
+        One of the most important skills that you should have as a fashion designer is a knowledge of fashion trends.<br> 
+        A fashion designer is not only passionate about fashion; they study the runway and predict industry changes.<br>
+      </p>
+      <p>
+        Fashion is a constantly evolving industry and what is hot one minute, will change the next.<br>
+      </p>
+      <p>
+        Many times, a look from other eras will come back full-force, and a designer must be ready to take, and embrace the change.<br>
+      </p>
+
+      <h2>Knowledge of Materials</h2>
+
+      <p>
+        A fashion designer will work with a variety of fabrics, fibres, materials, and patterns, which means you should have an eye for the many different materials.<br> 
+        This includes the origin and production of different fibres and nylons as well as textiles and yarns.<br>
+      </p>
+
+      <h2>Strong Sewing Skills</h2>
+
+      <p>
+        Any design that you create, you can sew on your own to quickly view on a model or mannequin, which means you should possess strong sewing skills.<br> 
+        Sewing is a learned skill, so it is not a mandatory requirement; however, you should know which material works best for what you are creating.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Advantages of Fashion Design</h2>
+
+      <p>
+        <i>Before making any decisions, you should look at the advantages and disadvantages of working in the fashion industry.</i>
+      </p>
+
+      <h2>Advantages</h2>
+
+      <p>
+        If you entered the fashion industry as a designer, the chances are good that you are an artistic soul who loves creating clothing or accessories.<br>
+        With that being said, once you have a completed design, it is very satisfying to see your work worn on other people.<br>
+      </p>
+      <p>
+        In this industry, you can harness your creative side, have fun, and reap benefits in the form of fame and fortune.<br>
+      </p>
+      <p>
+        Fashion design is one of the few jobs that offers a good paying, consistent income for your expression.<br> 
+        Also, fashion design awards you the opportunity to start your own small business.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Disadvantages of Fashion Design</h2>
+
+      <p>
+        <b>Now that you are aware of the advantages, you should review the disadvantages of the career:</b>
+      </p>
+      <p>
+        As a fashion designer, you will be required to work long hard hours to meet your demands, especially during peak times like Fashion Week.<br>
+      </p>
+      <p>
+        The job can also be very demanding when meeting deadlines and you can be harshly criticised.<br>
+      </p>
+      <p>
+        Additionally, some clients can be difficult to please, and it may take some time to build up your reputation.<br> 
+        Also, the fashion industry is exhaustingly competitive, and fashion trends are always changing.<br>
+      </p>
+
+      <h2 style="background-color: rgb(209, 67, 67);">Fashion Terminology - Introduction</h2>
+
+      <p>
+        In the fashion industry, there is a wealth of terms that you will hear, so you should be prepared with an understanding of some of the most basic terms.<br>
+      </p>
+      <p>
+        As you advance further into your career, these and others will become like second nature.<br>
+      </p>
+
+      <h2>Fashion</h2>
+
+      <p>
+        At the beginning of the module, we defined fashion design, but what is fashion? When you hear the term fashion, it is referring to a type of clothing, accessory, or shoe that is favoured by a large segment of the population at any given time.<br>
+      </p>
+      <p>
+        A perfect fashion trend example could include polka dots, combinations of colours and textures, or the 1980s style of dress.<br>
+      </p>
+
+      <h2><i>Apparel</i></h2>
+
+      <p>
+        As you get more comfortable in the industry, you will hear this term quite often.<br> 
+        Apparel refers to any and all clothing that you will design and create in your career.<br>
+      </p>
+
+      <h2><i>Garment</i></h2>
+
+      <p>
+        Once you have created apparel, such as a dress, coat, sweater, or an evening gown, it is most often referred to as a garment or an item of clothing.<br> 
+        You will also hear the term garment components, which refer to the sleeves, collars, and cuffs of the apparel.<br>
+      </p>
+
+      <h2><i>Silhouette</i></h2>
+
+      <P>
+        This is a term that you will hear most frequently when you are sketching, and it is used to reference the shape of a clothing style.<br> 
+        A silhouette forms the line of a dress and is used to flatter different body shapes.<br>
+      </P>
+      <p>
+        In your career, you will find that silhouettes are constantly changing in fashion.<br> 
+        Usually, whichever direction a silhouette takes, whether it is wider, shorter, or narrow, is the direction the fashion trend is following.<br>
+      </p>
+      <p>
+        Although silhouettes have changed a great deal throughout history, the straight, bell, and bustle silhouettes continue to emerge and re-emerge throughout history.<br>
+      </p>
+
+      <h2><i>Avant Garde</i></h2>
+
+      <p>
+        You may have heard this term already associated with the arts, architecture, or other cultures.<br>
+      </p>
+      <p>
+        The term avant garde comes from the French term ‘advance guard'’, or <i>‘vanguard’'</i>, to represent individuals or works that are unorthodox.<br>
+      </p>
+      <p>
+        In the world of fashion, avant garde represents the most daring, unconventional and wild designs.<br>
+      </p>
+      <p>
+        There are several avant garde themed designs that hit Paris Fashion Week every year including hyper construction dresses and foam headwear.<br>
+      </p>
+
+      <h2><i>Fad</i></h2>
+
+      <p>
+        As a fashion designer, you will spend lots of time analysing fashion trends and making predictions.<br> 
+        In doing that, it is crucial that you can recognise a fad, which is a passing fashion trend that becomes popular quickly and dies out fast.<br>
+      </p>
+
+      <h2><i>Classics</i></h2>
+
+      <p>
+        Another important piece of clothing in the world of fashion design are the classics.<br> 
+        These are the garments that are always acceptable and remain popular, regardless of fashion trends.<br>
+      </p>
+      <p>
+        If you have a pair of blue jeans, a dark business suit, or a white dress shirt in your closet, then you own a few classic pieces yourself.<br>
+      </p>
+
+      <h1 style="background-color: rgb(209, 67, 67);">Introduction Hands-on Tailoring and Sewing Skills</h1>
+
+      <p>
+        Techniques are taught on how to use manual and automatic sewing machines and general clothing construction skills.<br>
+        The course places emphasis on the practical hands-on skills required to start you off to making clothes.<br>
+      </p>
+      <p>
+        At the end of the training, participants will be able to make simple operation on the different kind of machines and are used in sewing male or female clothing.<br>
+      </p>
+
+      <h1><i>Materials to learn from</i></h1>
+
+      <ul>
+        <p>
+        <li>HOW TO PEDAL A MANUAL SEWING MACHINE AND LOCALLY REEL THREAD ONTO THE BOBBIN/ REELER</li>
+        </p>
+
+        <div>
+          <a class="medium" href="https://www.youtube.com/watch?v=0fa9MSwrK-g" target="_blank">Learn to pedal a manual sewing machine - Youtube</a>
+        </div>
+
+        <p>
+        <li>How To Pedal & Oil A Sewing Machine</li>
+        </p>
+
+        <div>
+          <a class="medium" href="https://www.youtube.com/watch?v=vrhBYsWh4Vc" target="_blank">Manual machine and Oiling the parts - Youtube</a>
+        </div>
+
+        <p>
+          <li>How to use automatic industrial sewing machine</li>
+        </p>
+
+        <div>
+          <a class="medium" href="https://www.youtube.com/watch?v=DVrVYoC5KJw" target="_blank">Learn how to use industrial sewing machine - Youtube</a>
+        </div>
+
+        <p>
+          <li>Intro to industrial sewing machine</li>
+        </p>
+
+        <div>
+          <a class="medium" href="https://www.youtube.com/watch?v=4r4p61Mk84w" target="_blank">Learn industrial sewing machine for beginners - Youtube</a>
+        </div>
+
+      </ul>
+
+      <h1 style="background-color: rgb(209, 67, 67);">Activities for this module</h1>
+
+      <div class="box" style="border: solid;">
+        <p>
+          <stronge>The following activities require you to research and explore.<br> 
+                  Although they will not be evaluated, they will help you grow and develop as a fashion designer.<br></stronge>
+        </p>
+      </div>
+
+      <h2>Activity</h2>
+
+      <p>
+        <i>Estimated Time: 1-week</i>
+      </p>
+      <p>
+        This module discusses the three types or sectors of fashion design.<br>
+      </p>
+      <p>
+        Now that you have a basic idea of what is available, you should explore each market further to determine the type of designer you might like to be.<br> 
+        For this activity, you will be exploring the top designers in every sector.<br> 
+        So, you should plan on researching the internet, visiting stores and exploring fashion magazines.<br> 
+        Begin with mass market fashion design, which will be the easiest sector for you to observe.<br> 
+        Unless you purchase haute couture or ready-to-wear designer clothing, you purchase mass market clothing yourself.<br>
+      </p>
+      <p>
+        Next, you should flip through a fashion magazine or visit the designer section of your local department store and take note of the ready-to-wear designs.<br> 
+        What are the notable differences between the mass market and ready-to-wear designs? Are there any advantages or disadvantages that you experienced as a shopper?<br>
+      </p>
+      <p>
+        Finally, explore the elite world of haute couture, what sets these fashions apart among the rest?<br>
+      </p>
+      <p><i>Submittion should be make through the academic website.</i></p>
+    </div>
+
+        <!--Footer for this project-->
+        <hr>
+        <footer class="bg-dark text-center text-gray-200">
+              
+            Copy Rights <span>&copy; 2023 Mg Fashionisto Academic. All Rights Reserved</span>
+    
+        </footer>
+    
+
+</body>
+</html>
