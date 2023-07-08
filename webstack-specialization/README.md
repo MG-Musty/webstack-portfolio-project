@@ -1,4 +1,4 @@
-# MG Fashionisto - The Fashion Academic 
+# MG Fashionisto - The World Fashion Academic 
 
 USING PYTHON (DJANGO-FRAMEWORK) AND JAVASCRIPT, HTML, CSS.
 
