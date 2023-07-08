@@ -23,4 +23,10 @@ USING PYTHON (DJANGO-FRAMEWORK) AND JAVASCRIPT, HTML, CSS.
 5. Run the Application - `python manage.py runserver`
 6. Migrate
 
+# Author :pen:
 
+[Mustapha Aliyu Galadima](https://mgmustyportfolio-io.onrender.com/)
+
+[Linkedin](https://www.linkedin.com/in/mustapha-aliyu/)
+
+[Twitter](https://twitter.com/MgsmartMustee/)
