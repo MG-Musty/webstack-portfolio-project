@@ -1,15 +1,10 @@
 {% load static %}
 
+{% load crispy_forms_tags %} 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
 {% load django_bootstrap5 %}
 
@@ -18,8 +13,13 @@
 {% bootstrap_javascript %}
 
 {% bootstrap_messages %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <title>Django CRM - Register</title>
+  <title>MG Fashionisto - Register</title>
 
   <!-- Custom fonts for this template-->
   <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -44,10 +44,10 @@
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
               </div>
-              <form method="POST">
-                {% csrf_token %}
-                {% bootstrap_form form %}
-                <button type="submit" class="btn btn-primary">Submit</button>
+              <form action="" method="POST">
+                  {% csrf_token %}
+                  {% bootstrap_form form %}
+                  <button type="submit" class="btn btn-primary">Submit</button>
               </form>
               <hr>
               <div class="text-center">
