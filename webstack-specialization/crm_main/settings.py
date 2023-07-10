@@ -46,6 +46,7 @@ THIRD_PARTY_APPS = [
     'django_bootstrap5',
     'crispy_bootstrap5',
 ]
+#CRISPY_TEMPLATE_PACK = 'uni_form'
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"

@@ -2,15 +2,14 @@ from django.contrib import admin
 from django.urls import path, include
 
 
-from apps.common.views import HomeView, SignUpView, DashboardView, ProfileUpdateView, ProfileView, ModulesView, RegisterView, ModuleoneView, ModuletwoView, ModulethreeView
+from apps.common.views import HomeView, SignUpView, DashboardView, ProfileUpdateView, ProfileView, ModulesView, ModuleoneView, ModuletwoView, ModulethreeView
 
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+   
     path('', HomeView.as_view(), name='home'),
-    path('register/', RegisterView.as_view(), name='register'),
     path('dashboard/', DashboardView.as_view(), name='dashboard'),
     path('modules/', ModulesView.as_view(), name='modules'),
     path('moduleone/', ModuleoneView.as_view(), name='moduleone'),
@@ -22,6 +21,8 @@ urlpatterns = [
     
 
     # Authentication 
+    path('register/', SignUpView.as_view(), name="register"),
+
     path('login/', auth_views.LoginView.as_view(
         template_name='common/login.html'
         ),
