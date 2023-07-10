@@ -1,13 +1,21 @@
-# Django CRM Project - Contact Management Project 
+# MG Fashionisto - The World Fashion Academic 
 
-## Live Demo - http://professionalcipher.pythonanywhere.com/ 
-[Comment on Youtube Video if not working & i will fix it] [Installation Video](https://youtu.be/A6mTN6G-adM)
+USING PYTHON (DJANGO-FRAMEWORK) AND JAVASCRIPT, HTML, CSS.
 
-I am trying to create a Tutorial on How yo Create CRM or Contact Management System in Django. Basically this tutorial is creating while explaining video tutorial. This is the series of Django CRM Tutorial.
+**Home-Page View**
 
-![Image of CRM](https://studygyaan.com/wp-content/uploads/2020/02/Django-CRM-Website.jpg)
+![Mgfashionisto home-page](https://github.com/MG-Musty/webstack-portfolio-project/assets/106968663/aa3f9c96-ed68-44d1-badb-4dd64a5e7f84)
 
-### Setup
+**Dashboard View**
+
+![Mgfashionisto Dashboard](https://github.com/MG-Musty/webstack-portfolio-project/assets/106968663/38d2b9bd-d1c7-476f-b122-0e3fa5a6e100)
+
+**Modules-Page View**
+
+![modules view page](https://github.com/MG-Musty/webstack-portfolio-project/assets/106968663/b37bd6f0-2aa0-4591-abf4-48a5a2d03fbe)
+
+## A Brief Setup for this project
+
 1. Create a folder and put all the files inside it.
 2. Create a virtual environtment - `virtualenv env`
 3. Activate VirtualENV - ubuntu : `source env/bin/activate` || windows : `. .\env\Scripts\activate`
@@ -15,3 +23,10 @@ I am trying to create a Tutorial on How yo Create CRM or Contact Management Syst
 5. Run the Application - `python manage.py runserver`
 6. Migrate
 
+# Author :pen:
+
+[Mustapha Aliyu Galadima](https://mgmustyportfolio-io.onrender.com/)
+
+[Linkedin](https://www.linkedin.com/in/mustapha-aliyu/)
+
+[Twitter](https://twitter.com/MgsmartMustee/)
