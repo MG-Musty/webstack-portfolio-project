@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView
@@ -6,8 +6,10 @@ from .forms import SignUpForm, UserForm, ProfileForm
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.contrib import messages
+from django.urls import reverse
 from apps.userprofile.models import Profile
-from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 class HomeView(TemplateView):
     template_name = 'common/home.html'
@@ -26,11 +28,7 @@ class ModulethreeView(TemplateView):
     template_name = 'common/modulethree.html'
 
 
-# registration view template
-class RegisterView(TemplateView):
-    template_name = 'common/register.html'
-
-
+# dashboard views and regenerate
 class DashboardView(LoginRequiredMixin, TemplateView):
     template_name = 'common/dashboard.html'
     login_url = reverse_lazy('home')
@@ -43,22 +41,14 @@ class DashboardView(LoginRequiredMixin, TemplateView):
         context['book_list'] = self.request.user
         return context
 
-@csrf_exempt
+# signing up and reistration instance
 class SignUpView(CreateView):
     form_class = SignUpForm
     success_url = reverse_lazy('home')
     template_name = 'common/register.html'
 
-from django.http import HttpResponseRedirect
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse_lazy
-from .forms import UserForm, ProfileForm
-from django.contrib.auth.models import User
-from apps.userprofile.models import Profile
-from django.urls import reverse
 
-from django.contrib import messages
-
+# profile update and wiews
 class ProfileView(LoginRequiredMixin, TemplateView):
     template_name = 'common/profile.html'
 

@@ -24,10 +24,18 @@ class SignUpForm(UserCreationForm):
 class UserForm(forms.ModelForm):
     class Meta:
         model = User
-        fields = '__all__'
-
+        fields = [
+            'username', 
+            'first_name', 
+            'last_name', 
+            'email', 
+        ]
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = '__all__'
-
+        fields = [
+            'bio',
+            'phone_number',
+            'birth_date',
+            'profile_image'
+        ]
