@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.urls import reverse
-from apps.userprofile.models import Profile
+from apps.userprofile.models import Profile 
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
