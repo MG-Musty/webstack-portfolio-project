@@ -31,8 +31,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '!*ndp-(t$)0cgpl!q4bh^t^o%&*z8!
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+# update for the Railway deployment
+ALLOWED_HOSTS = ['mgfashionisto-academic.up.railway.app', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = ['https://mgfashionisto-academic.up.railway.app']
 
 # Application definition
 
