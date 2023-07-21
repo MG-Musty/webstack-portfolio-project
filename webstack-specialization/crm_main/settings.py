@@ -195,15 +195,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SOCIAL_AUTH_FACEBOOK_KEY = '565284834205523'  # App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = 'c6b12784c9589a0b3bdfe33114a19688'  # App Secret
 
-import dj_database_url
-#DATABASE_URL.
+# import dj_database_url
+# #DATABASE_URL.
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+# DATABASE_URL = os.getenv("DATABASE_URL")
 
-DATABASES = {
-    "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
-}
+# DATABASES = {
+#     "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
+# }
 
-# The present URL
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+# # The present URL
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
