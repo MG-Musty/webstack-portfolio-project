@@ -27,6 +27,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '!*ndp-(t$)0cgpl!q4bh^t^o%&*z8!=&g-*e+bocov1h#5zsux'
+
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '!*ndp-(t$)0cgpl!q4bh^t^o%&*z8!=&g-*e+bocov1h#5zsux')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -201,6 +204,7 @@ SOCIAL_AUTH_FACEBOOK_SECRET = 'c6b12784c9589a0b3bdfe33114a19688'  # App Secret
 
 import dj_database_url
 #DATABASE_URL.
+
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
