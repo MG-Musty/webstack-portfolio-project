@@ -12,19 +12,25 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+from dotenv import load_dotenv
+
+#BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-#SECRET_KEY = '!*ndp-(t$)0cgpl!q4bh^t^o%&*z8!=&g-*e+bocov1h#5zsux'
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '!*ndp-(t$)0cgpl!q4bh^t^o%&*z8!=&g-*e+bocov1h#5zsux')
+
+#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '!*ndp-(t$)0cgpl!q4bh^t^o%&*z8!=&g-*e+bocov1h#5zsux')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 
@@ -204,6 +210,6 @@ DATABASES = {
     "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
 }
 
-# The present URL
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+# # The present URL
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
